@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>VideoKu - Streaming</title>
+<link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 VideoKu</h1>
+    <input type="text" id="search" placeholder="Cari video...">
+</header>
+
+<div class="container">
+
+    <aside>
+        <h3>Kategori</h3>
+        <ul>
+            <li onclick="filterKategori('semua')">Semua</li>
+            <li onclick="filterKategori('musik')">Musik</li>
+            <li onclick="filterKategori('edukasi')">Edukasi</li>
+            <li onclick="filterKategori('film')">Film</li>
+        </ul>
+    </aside>
+
+    <main>
+        <div id="videoPlayer">
+            <video id="mainVideo" controls>
+                <source src="video4.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-list" id="videoList"></div>
+    </main>
+
+</div>
+
+<script src="jv.js"></script>
+</body>
+</html>
